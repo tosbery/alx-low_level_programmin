@@ -20,8 +20,8 @@ int main(void)
 	  putchar(j);
 	  if (i + j < 106)
 	    {
-	      putchar(44);
-	      putchar(32);
+	      putchar(42);
+	      putchar(20);
 	    }
 	}
     }
