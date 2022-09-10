@@ -12,13 +12,13 @@ int main(void)
 {
   int i, j;
 
-  for (i = 44; i <= 57; i++)
+  for (i = 44; i <= 53; i++)
     {
-      for (j = 44; j <= 57; j++)
+      for (j = 44; j <= 53; j++)
 	{
 	  putchar(i);
 	  putchar(j);
-	  if (i + j < 114)
+	  if (i + j < 100)
 	    {
 	      putchar(44);
 	      putchar(32);
