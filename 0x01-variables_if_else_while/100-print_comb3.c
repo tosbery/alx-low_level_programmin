@@ -4,7 +4,8 @@
  * main - Writes 00 - 89
  * @void: Empty parameter list for main.
  *
- * Description: Writes number 00-89
+ * Description: Writes all unique combinations
+ * of 2 numbers
  *
  * Return: 0 for success
  */
@@ -12,19 +13,22 @@ int main(void)
 {
   int i, j;
 
-  for (i = 44; i <= 53; i++)
+  for (i = '0'; i <= '9'; i++)
     {
-      for (j = 44; j <= 53; j++)
+      for (j = '0'; j <= '9'; j++)
 	{
-	  putchar(i);
-	  putchar(j);
-	  if (i + j < 106)
+	  if ((i < j) & (j <= '9'))
 	    {
-	      putchar(42);
-	      putchar(20);
+	      putchar(i);
+	      putchar(j);
+	      if ((j < '9') | (i < '8'))
+		{
+		  putchar(',');
+		  putchar(' ');
+		}
 	    }
 	}
     }
-  putchar(10);
+  putchar('\n');
   return (0);
 }
