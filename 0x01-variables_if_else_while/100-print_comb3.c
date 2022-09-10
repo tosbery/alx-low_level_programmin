@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Writes 00 - 99
+ * main - Writes 00 - 89
  * @void: Empty parameter list for main.
  *
- * Description: Writes number 00-99
+ * Description: Writes number 00-89
  *
  * Return: 0 for success
  */
@@ -12,9 +12,9 @@ int main(void)
 {
   int i, j;
 
-  for (i = 48; i <= 57; i++)
+  for (i = 44; i <= 57; i++)
     {
-      for (j = 48; j <= 57; j++)
+      for (j = 44; j <= 57; j++)
 	{
 	  putchar(i);
 	  putchar(j);
