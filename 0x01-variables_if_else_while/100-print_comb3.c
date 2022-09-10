@@ -18,7 +18,7 @@ int main(void)
 	{
 	  putchar(i);
 	  putchar(j);
-	  if (i + j < 100)
+	  if (i + j < 106)
 	    {
 	      putchar(44);
 	      putchar(32);
