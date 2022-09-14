@@ -5,9 +5,9 @@
  *
  * @void: Empty parameter list for main.
  *
- * Description:
+ * Description: 'Prints out _putchar w/out stdio'
  *
- *
+ * Return: 0 for success
  */
 
 int main(void)
