@@ -5,3 +5,4 @@ File 3-puts.c is a function that prints a string, followed by a new line, to std
 File 4-print_rev.c is a function that prints a string, in reverse, followed by a new line.
 File 5-rev_string.c is a function that reverses a string.
 File 6-puts2.c is a function that prints one char out of 2 of a string, followed by a new line.
+File 7-puts_half.c is a function that prints half of a string, followed by a new line.
