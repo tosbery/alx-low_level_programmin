@@ -1,34 +1,35 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - Writes 00 - 89
- * @void: Empty parameter list for main.
+ * main - Entry point
  *
- * Description: Writes all unique combinations
- * of 2 numbers
- *
- * Return: 0 for success
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-  int i, j;
+int d, p;
 
-  for (i = '0'; i <= '9'; i++)
-    {
-      for (j = '0'; j <= '9'; j++)
-	{
-	  if ((i < j) & (j <= '9'))
-	    {
-	      putchar(i);
-	      putchar(j);
-	      if ((j < '9') | (i < '8'))
-		{
-		  putchar(',');
-		  putchar(' ');
-		}
-	    }
-	}
-    }
-  putchar('\n');
-  return (0);
+for (d = '0'; d < '9'; d++)
+{
+for (p = d + 1; p <= '9'; p++)
+{
+if (p != d)
+{
+putchar(d);
+putchar(p);
+
+if (d == '8' && p == '9')
+continue;
+putchar(',');
+putchar(' ');
 }
+}
+}
+putchar('\n');
+
+return (0);
+}
+	      
