@@ -1,25 +1,20 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
- * main - Prints alphabet
- * @void: Empty parameter list for main.
+ * main - Entry point
  *
- * Description: Prints the alphabet in lower case
- * Can only use putchar
- *
- * Return: 0 for success
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-  char letter = 'a';
+char low;
 
-  while (letter <= 'z')
-    {
-      putchar(letter);
-      letter++;
-    }
-  putchar('\n');
-  return (0);
+for (low = 'a'; low <= 'z'; low++)
+putchar(low);
+putchar('\n');
+
+return (0);
 }
