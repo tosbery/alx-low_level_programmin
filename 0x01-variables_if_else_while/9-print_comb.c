@@ -1,29 +1,27 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
- * main - writes 0-9
- * @void: Empty parameter list for main.
+ * main - Entry point
  *
- * Description: Writes 0-9 with comma and space
- *
- * Return: 0 for success
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-  int num = 48;
+int d;
 
-  while (num < 58)
-    {
-      putchar(num);
-      if (num < 57)
-	{
-	  putchar(',');
-	  putchar(' ');
-	}
-      num++;
-    }
-  putchar('\n');
-  return (0);
+for (d = '0'; d <= '9'; d++)
+{
+putchar(d);
+if (d != '9')
+{
+putchar(',');
+putchar(' ');
+}
+}
+putchar('\n');
+
+return (0);
 }
