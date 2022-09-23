@@ -1,24 +1,20 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
- * main - Prints base 10 numbers
- * @void: Empty parameter list for main.
+ * main - Entry point
  *
- * Description: Prints numbers 0-9
- *
- * Return: 0 for success
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-  char num = '0';
+int i;
 
-  while (num <= '9')
-    {
-      putchar(num);
-      num++;
-    }
-  putchar('\n');
-  return (0);
+for (i = 0; i < 10; i++)
+printf("%d", i);
+printf("\n");
+
+return (0);
 }
