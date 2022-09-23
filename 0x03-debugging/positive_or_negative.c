@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <time.h>
-/*
+/**
  * main - Positive or Negative - print sign of random number
  * @void: Empty parameter list for main.
  *
@@ -14,7 +14,7 @@
  */
 int main(void)
 {
-/*
+  /**
  * variable n has been declared
  * coding then assigns the random value.
  */
