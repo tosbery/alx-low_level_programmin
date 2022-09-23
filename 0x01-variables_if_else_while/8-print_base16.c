@@ -1,32 +1,23 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
- * main - Prints base 16
- * @void: Empty parameter list for main.
+ * main - Entry point
  *
- * Description: Prints all hexadecimals
- *
- * Return: 0 for success
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-  int num = 48;
+int d;
+char low;
 
-  while (num <= 57)
-    {
-      putchar(num);
-      num++;
-    }
+for (d = '0'; d <= '9'; d++)
+putchar(d);
+for (low = 'a'; low <= 'f'; low++)
+putchar(low);
+putchar('\n');
 
-  num = 97;
-
-  while (num <= 102)
-    {
-      putchar(num);
-      num++;
-    }
-  putchar('\n');
-  return (0);
+return (0);
 }
